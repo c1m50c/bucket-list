@@ -1,0 +1,4 @@
+.BucketList {
+    display: flex;
+    flex-direction: column;
+}
