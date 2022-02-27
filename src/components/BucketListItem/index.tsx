@@ -1,6 +1,6 @@
 function BucketListItem() {
     return (
-        <div className="BucketListItem"></div>
+        <div className="BucketListItem">BucketListItem</div>
     );
 }
 
