@@ -25,4 +25,4 @@
 .BucketListItem .False { background-color: rgb(48, 248, 48); }
 .BucketListItem .True { background-color: rgb(248, 48, 48); }
 .BucketListItem .False:hover, .True:hover { filter: brightness(1.5); }
-.BucketListItem .Utility { padding: 0.25rem 1rem; }
+.BucketListItem .ToggleComplete, .RemoveButton { padding: 0.25rem 1rem; }
