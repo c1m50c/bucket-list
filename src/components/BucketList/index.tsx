@@ -4,7 +4,7 @@ import "./index.css";
 
 
 const add_item = (items: JSX.Element[], set_method: React.Dispatch<React.SetStateAction<JSX.Element[]>>) => {
-    set_method(items.concat([<BucketListItem />]));
+    set_method(items.concat([<BucketListItem completed={false} />]));
 }
 
 
