@@ -4,13 +4,13 @@ import "./index.css";
 
 
 
-interface BucketListItemProps {
+interface ListEntryProps {
     completed: boolean,
     name?: string | undefined,
 }
 
 
-function BucketListItem({ completed, name }: BucketListItemProps) {
+function ListEntry({ completed, name }: ListEntryProps) {
     const self: MutableRefObject<HTMLDivElement | null> = useRef(null);
     const [ is_complete, set_is_complete ] = useState(completed);
 
@@ -18,8 +18,8 @@ function BucketListItem({ completed, name }: BucketListItemProps) {
     const toggle_is_complete = () => set_is_complete(!is_complete);
 
     return (
-        <div className="BucketListItem" ref={self}>
-            <input type="text" placeholder="Empty" className="ItemName" />
+        <div className="ListEntry" ref={self}>
+            <input type="text" placeholder="Empty" className="EntryName" />
 
             <button className={`ToggleComplete ${ is_complete ? "True" : "False" }`} onClick={toggle_is_complete}>
                 { is_complete ? <strong>✔</strong> : <strong>✖</strong> }
@@ -32,4 +32,4 @@ function BucketListItem({ completed, name }: BucketListItemProps) {
     );
 }
 
-export default BucketListItem;
+export default ListEntry;

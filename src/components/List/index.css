@@ -1,11 +1,11 @@
-.BucketList {
+.List {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
 }
 
 
-.BucketList .AddItem {
+.List .AddEntry {
     font-size: 1.25rem;
     border: none;
 
@@ -16,4 +16,4 @@
 }
 
 
-.BucketList .AddItem:hover { background-color: var(--button-color-hover); cursor: pointer; }
+.List .AddEntry:hover { background-color: var(--button-color-hover); cursor: pointer; }

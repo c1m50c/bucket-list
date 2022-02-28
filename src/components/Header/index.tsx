@@ -7,7 +7,7 @@ import "./index.css";
 function Header() {
     return (
         <header className="Header">
-            <h1>Bucket List Builder 📝</h1>
+            <h1>List Builder 📝</h1>
         </header>
     );
 }

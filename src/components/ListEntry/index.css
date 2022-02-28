@@ -6,14 +6,14 @@
 }
 
 
-.BucketListItem * {
+.ListEntry * {
     color: var(--dark-text-color);
     font-size: 1.25rem;
     border: none;
 }
 
 
-.BucketListItem {
+.ListEntry {
     display: flex;
     width: 100%;
     gap: 0.25rem;
@@ -22,7 +22,7 @@
 }
 
 
-.BucketListItem input {
+.ListEntry input {
     flex: 1;
 
     color: var(--base-text-color);
@@ -30,14 +30,14 @@
 }
 
 
-.BucketListItem .False { background-color: var(--bool-false-color); }
-.BucketListItem .True { background-color: var(--bool-true-color); }
-.BucketListItem .False:hover { background-color: var(--bool-false-hover-color); }
-.BucketListItem .True:hover { background-color: var(--bool-true-hover-color); }
-.BucketListItem .ToggleComplete:hover, .RemoveButton:hover { cursor: pointer; }
+.ListEntry .False { background-color: var(--bool-false-color); }
+.ListEntry .True { background-color: var(--bool-true-color); }
+.ListEntry .False:hover { background-color: var(--bool-false-hover-color); }
+.ListEntry .True:hover { background-color: var(--bool-true-hover-color); }
+.ListEntry .ToggleComplete:hover, .RemoveButton:hover { cursor: pointer; }
 
 
-.BucketListItem .ToggleComplete, .RemoveButton {
+.ListEntry .ToggleComplete, .RemoveButton {
     padding: 0.25rem 1rem;
     transition: background-color var(--transition-settings);
 }
