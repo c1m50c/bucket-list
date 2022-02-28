@@ -3,3 +3,17 @@
     flex-direction: column;
     gap: 0.25rem;
 }
+
+
+.BucketList .AddItem {
+    font-size: 1.25rem;
+    border: none;
+
+    background-color: var(--button-color);
+    color: var(--base-text-color);
+
+    transition: background-color var(--transition-settings);
+}
+
+
+.BucketList .AddItem:hover { background-color: var(--button-color-hover); cursor: pointer; }

@@ -22,7 +22,7 @@ function BucketListItem({ completed, name }: BucketListItemProps) {
             <input type="text" placeholder="Empty" className="ItemName" />
 
             <button className={`ToggleComplete ${ is_complete ? "True" : "False" }`} onClick={toggle_is_complete}>
-                { is_complete ? <strong>✖</strong> : <strong>✔</strong> }
+                { is_complete ? <strong>✔</strong> : <strong>✖</strong> }
             </button>
 
             <button className="RemoveButton" onClick={remove_self}>

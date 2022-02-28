@@ -1,5 +1,13 @@
+:root {
+    --bool-true-color: rgb(48, 248, 48);
+    --bool-true-hover-color: rgb(72, 248, 72);
+    --bool-false-color: rgb(248, 48, 48);
+    --bool-false-hover-color: rgb(248, 72, 72);
+}
+
+
 .BucketListItem * {
-    color: rgb(48, 48, 48);
+    color: var(--dark-text-color);
     font-size: 1.25rem;
     border: none;
 }
@@ -8,7 +16,7 @@
 .BucketListItem {
     display: flex;
     width: 100%;
-    gap: 0;
+    gap: 0.25rem;
 
     align-items: stretch;
 }
@@ -17,12 +25,19 @@
 .BucketListItem input {
     flex: 1;
 
-    color: rgb(248, 248, 248);
-    background-color: rgb(48, 48, 48);
+    color: var(--base-text-color);
+    background-color: var(--dark-text-color);
 }
 
 
-.BucketListItem .False { background-color: rgb(48, 248, 48); }
-.BucketListItem .True { background-color: rgb(248, 48, 48); }
-.BucketListItem .False:hover, .True:hover { filter: brightness(1.5); }
-.BucketListItem .ToggleComplete, .RemoveButton { padding: 0.25rem 1rem; }
+.BucketListItem .False { background-color: var(--bool-false-color); }
+.BucketListItem .True { background-color: var(--bool-true-color); }
+.BucketListItem .False:hover { background-color: var(--bool-false-hover-color); }
+.BucketListItem .True:hover { background-color: var(--bool-true-hover-color); }
+.BucketListItem .ToggleComplete:hover, .RemoveButton:hover { cursor: pointer; }
+
+
+.BucketListItem .ToggleComplete, .RemoveButton {
+    padding: 0.25rem 1rem;
+    transition: background-color var(--transition-settings);
+}
