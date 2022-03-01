@@ -1,11 +1,33 @@
-.List {
+.List, .List li {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
 }
 
 
-.List .AddEntry {
+.List .Name {
+    font-size: 2rem;
+    text-align: center;
+    border: none;
+
+    color: var(--base-text-color);
+    background-color: var(--background-color);
+}
+
+
+.List .Name:focus { outline: none; }
+
+
+.List .Utility {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.25rem;
+}
+
+
+.List .Utility * {
+    width: 100%;
     font-size: 1.25rem;
     border: none;
 
@@ -16,4 +38,10 @@
 }
 
 
-.List .AddEntry:hover { background-color: var(--button-color-hover); cursor: pointer; }
+.List .Utility *:hover { background-color: var(--button-color-hover); cursor: pointer; }
+
+
+.List .Utility *:disabled {
+    background-color: var(--disabled-color);
+    cursor: initial;
+}

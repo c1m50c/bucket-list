@@ -15,10 +15,15 @@ function List() {
     const [contents, set_contents] = useState<JSX.Element[]>([  ]);
 
     return (
-        <li className="List">
-            {contents}
-            <button className="AddEntry" onClick={() => add_entry(contents, set_contents)}>+</button>
-        </li>
+        <div className="List">
+            <input type="text" placeholder="Untitled List" className="Name" />
+            <li>{contents}</li>
+            <div className="Utility">
+                <button className="AddEntry" onClick={() => add_entry(contents, set_contents)}>Add Entry</button>
+                <button className="Settings" disabled={true}>Settings</button>
+                <button className="Export" disabled={true}>Export</button>
+            </div>
+        </div>
     );
 }
 
