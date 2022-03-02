@@ -34,10 +34,10 @@
 .ListEntry .True { background-color: var(--bool-true-color); }
 .ListEntry .False:hover { background-color: var(--bool-false-hover-color); }
 .ListEntry .True:hover { background-color: var(--bool-true-hover-color); }
-.ListEntry .ToggleComplete:hover, .RemoveButton:hover { cursor: pointer; }
+.ListEntry .ToggleComplete:hover, .ListEntry .RemoveButton:hover { cursor: pointer; }
 
 
-.ListEntry .ToggleComplete, .RemoveButton {
+.ListEntry .ToggleComplete, .ListEntry .RemoveButton {
     padding: 0.25rem 1rem;
     transition: background-color var(--transition-settings);
 }
